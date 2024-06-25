@@ -1,0 +1,1179 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:03:19[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a2f4h (172788) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=0003a31c vaddr=3ffb0000 size=03cc8h ( 15560) load[0m
+[0;32mI (174) esp_image: segment 2: paddr=0003dfec vaddr=40080000 size=0202ch (  8236) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0738h (657208) map[0m
+[0;32mI (419) esp_image: segment 4: paddr=000e0760 vaddr=4008202c size=165c8h ( 91592) load[0m
+[0;32mI (470) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (470) boot: Disabling RNG early entropy source...[0m
+[0;32mI (481) cpu_start: Multicore app[0m
+[0;32mI (482) cpu_start: Pro cpu up.[0m
+[0;32mI (482) cpu_start: Starting app cpu, entry point is 0x40081548[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (499) cpu_start: Pro cpu start user code[0m
+[0;32mI (500) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (500) cpu_start: Application information:[0m
+[0;32mI (504) cpu_start: Project name:     mqtt-tcp[0m
+[0;32mI (509) cpu_start: App version:      a4afc2c-dirty[0m
+[0;32mI (515) cpu_start: Compile time:     Jun  2 2024 11:02:39[0m
+[0;32mI (521) cpu_start: ELF file SHA256:  5a9ba17d...[0m
+[0;32mI (526) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (532) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (537) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (542) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (547) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (554) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFB8BC0 len 00027440 (157 KiB): DRAM[0m
+[0;32mI (566) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (572) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (579) heap_init: At 400985F4 len 00007A0C (30 KiB): IRAM[0m
+[0;32mI (586) spi_flash: detected chip: generic[0m
+[0;32mI (589) spi_flash: flash io: dio[0m
+[0;33mW (593) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (607) app_start: Starting scheduler on CPU0[0m
+[0;32mI (612) app_start: Starting scheduler on CPU1[0m
+[0;32mI (612) main_task: Started on CPU0[0m
+[0;32mI (622) main_task: Calling app_main()[0m
+[0;32mI (622) mqtt-logs: [APP] Startup..[0m
+[0;32mI (622) mqtt-logs: [APP] Free memory: 275856 bytes[0m
+[0;32mI (632) mqtt-logs: [APP] IDF version: HEAD-HASH-NOTFOUND[0m
+[0;32mI (652) example_connect: Start example_connect.[0m
+I (662) wifi:wifi driver task: 3ffc079c, prio:23, stack:6656, core=0
+I (662) wifi:wifi firmware version: 91b9630
+I (662) wifi:wifi certification version: v7.0
+I (662) wifi:config NVS flash: enabled
+I (662) wifi:config nano formating: disabled
+I (672) wifi:Init data frame dynamic rx buffer num: 32
+I (672) wifi:Init static rx mgmt buffer num: 5
+I (682) wifi:Init management short buffer num: 32
+I (682) wifi:Init dynamic tx buffer num: 32
+I (682) wifi:Init static rx buffer size: 1600
+I (692) wifi:Init static rx buffer num: 10
+I (692) wifi:Init dynamic rx buffer num: 32
+[0;32mI (702) wifi_init: rx ba win: 6[0m
+[0;32mI (702) wifi_init: tcpip mbox: 32[0m
+[0;32mI (702) wifi_init: udp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp tx win: 5760[0m
+[0;32mI (722) wifi_init: tcp rx win: 5760[0m
+[0;32mI (722) wifi_init: tcp mss: 1440[0m
+[0;32mI (722) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (732) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (732) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (832) wifi:mode : sta (c8:f0:9e:7b:77:c4)
+I (832) wifi:enable tsf
+[0;32mI (832) example_connect: Connecting to agua...[0m
+[0;32mI (842) example_connect: Waiting for IP(s)[0m
+I (3252) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (3492) wifi:state: init -> auth (b0)
+I (3502) wifi:state: auth -> assoc (0)
+I (3502) wifi:state: assoc -> run (10)
+W (3502) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (3512) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (3532) wifi:connected with agua, aid = 20, channel 8, BW20, bssid = d8:a0:e8:c3:38:dd
+I (3532) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (3532) wifi:pm start, type: 1
+
+I (3582) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4652) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:caf0:9eff:fe7b:77c4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (5642) wifi:<ba-add>idx:0 (ifx:0, d8:a0:e8:c3:38:dd), tid:0, ssn:46, winSize:64
+[0;32mI (6532) esp_netif_handlers: example_netif_sta ip: 192.168.1.33, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6532) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.33[0m
+[0;32mI (6542) example_common: Connected to example_netif_sta[0m
+[0;32mI (6542) example_common: - IPv4 address: 192.168.1.33,[0m
+[0;32mI (6552) example_common: - IPv6 address: fe80:0000:0000:0000:caf0:9eff:fe7b:77c4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6562) ST7789: GPIO_CS=-1[0m
+[0;32mI (6562) ST7789: GPIO_DC=26[0m
+[0;32mI (6572) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6582) ST7789: GPIO_RESET=25[0m
+[0;32mI (6582) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6892) ST7789: GPIO_BL=-1[0m
+[0;32mI (6892) ST7789: GPIO_MOSI=14[0m
+[0;32mI (6892) ST7789: GPIO_SCLK=27[0m
+[0;32mI (7862) mqtt-logs: Other event id:7[0m
+[0;32mI (7872) rc522: Initialized (firmware v2.0)[0m
+Iniciando keyboard 
+[0;32mI (7872) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7882) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7882) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7892) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7902) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7912) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7922) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7932) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+Primer byte de Font24_Table: 0x00
+[0;32mI (7942) main_task: Returned from app_main()[0m
+[0;32mI (8302) mqtt-logs: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8302) mqtt-logs: se publicó el mensaje, msg_id=53193[0m
+[0;32mI (8312) mqtt-logs: Suscrito correctamente, msg_id=39639[0m
+[0;32mI (8512) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=53193[0m
+[0;32mI (8812) mqtt-logs: MQTT_EVENT_SUBSCRIBED, msg_id=39639[0m
+[0;32mI (9122) mqtt-logs: MQTT_EVENT_DATA[0m
+TOPIC=/cntrlaxs/respuesta
+DATA=100
+[0;32mI (9122) rc522-logs: Cofre abierto[0m
+[0;32mI (20072) rc522-logs: Tarjeta escaneada (sn: 142605371045)[0m
+[0;32mI (20072) mqtt-logs: Mensaje enviado correctamente, msg_id=44437[0m
+[0;32mI (20282) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=44437[0m
+[0;32mI (20692) mqtt-logs: MQTT_EVENT_DATA[0m
+TOPIC=/cntrlaxs/respuesta
+DATA=111
+[0;32mI (20702) rc522-logs: Acceso permitido[0m
+[0;32mI (69322) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (69322) mqtt-logs: Código ingresado hasta ahora: 1[0m
+[0;32mI (69382) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (69382) mqtt-logs: Código ingresado hasta ahora: 11[0m
+[0;32mI (69442) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (69442) mqtt-logs: Código ingresado hasta ahora: 111[0m
+[0;32mI (75152) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (75152) mqtt-logs: Código ingresado hasta ahora: 1112[0m
+[0;32mI (75212) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (75212) mqtt-logs: Código ingresado hasta ahora: 11122[0m
+[0;32mI (75272) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (75272) mqtt-logs: Código ingresado hasta ahora: 111222[0m
+[0;32mI (76832) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76842) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76852) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76862) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76872) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76882) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76892) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76902) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76912) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76922) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76932) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76942) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76952) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76962) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76972) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76982) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (76992) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (77002) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (81962) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (81972) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (81982) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (81992) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (82002) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (82012) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (82022) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (82032) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (82042) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (82052) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (82062) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (82072) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (82082) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (83102) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (83112) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (83122) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (83132) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (83142) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (83152) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (83162) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (83172) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (83182) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (83192) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (83202) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (83212) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (84112) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84122) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84132) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84142) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84152) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84162) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84172) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84182) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84192) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84202) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84212) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84222) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84232) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84242) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84252) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84262) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84272) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84282) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (84292) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (85092) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85102) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85112) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85122) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85132) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85142) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85152) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85162) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85172) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85182) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85192) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85202) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85212) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85222) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85232) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (85242) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (86062) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86072) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86082) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86092) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86102) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86112) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86122) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86132) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86142) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86152) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86162) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86172) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86182) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86192) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86202) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86212) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86222) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86232) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86242) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86252) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86262) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (86632) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86642) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86652) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86662) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86672) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86682) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86692) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86702) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86712) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86722) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86732) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86742) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86752) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86762) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86772) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86782) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86792) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86802) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86812) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86822) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86832) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (86842) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87042) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87052) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87062) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87072) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87082) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87092) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87102) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87112) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87122) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87132) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87142) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87152) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87162) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87172) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87182) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87192) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87202) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87212) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87222) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87342) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87352) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87362) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87372) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87382) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87392) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87402) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87412) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87422) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87432) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87442) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87452) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87462) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87572) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87582) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87592) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87602) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87612) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87622) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87632) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87642) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87652) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87662) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87672) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87682) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87692) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87702) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (87892) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (87902) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (87912) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (87922) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (87932) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (87942) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (87952) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (87962) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (87972) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (87982) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (87992) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88002) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88012) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88022) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88032) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88042) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88052) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88062) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88072) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88082) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88092) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88102) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88112) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88122) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88132) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88142) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88152) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88162) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88172) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88392) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88402) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88412) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88422) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88432) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88442) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88452) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88462) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88472) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88482) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88492) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88502) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88512) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88522) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88532) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88542) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88552) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88562) mqtt-logs: Tecla presionada: 3[0m
+[0;32mI (88692) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88702) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88712) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88722) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88732) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88742) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88752) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88762) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88772) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88782) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88792) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88802) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88812) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88822) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88832) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88842) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88852) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88862) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (88872) mqtt-logs: Tecla presionada: 1[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:03:19[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a2f4h (172788) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=0003a31c vaddr=3ffb0000 size=03cc8h ( 15560) load[0m
+[0;32mI (174) esp_image: segment 2: paddr=0003dfec vaddr=40080000 size=0202ch (  8236) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0738h (657208) map[0m
+[0;32mI (419) esp_image: segment 4: paddr=000e0760 vaddr=4008202c size=165c8h ( 91592) load[0m
+[0;32mI (470) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (470) boot: Disabling RNG early entropy source...[0m
+[0;32mI (481) cpu_start: Multicore app[0m
+[0;32mI (482) cpu_start: Pro cpu up.[0m
+[0;32mI (482) cpu_start: Starting app cpu, entry point is 0x40081548[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (500) cpu_start: Pro cpu start user code[0m
+[0;32mI (500) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (500) cpu_start: Application information:[0m
+[0;32mI (504) cpu_start: Project name:     mqtt-tcp[0m
+[0;32mI (509) cpu_start: App version:      a4afc2c-dirty[0m
+[0;32mI (515) cpu_start: Compile time:     Jun  2 2024 11:02:39[0m
+[0;32mI (521) cpu_start: ELF file SHA256:  5a9ba17d...[0m
+[0;32mI (526) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (532) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (537) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (542) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (547) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (554) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFB8BC0 len 00027440 (157 KiB): DRAM[0m
+[0;32mI (566) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (572) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (579) heap_init: At 400985F4 len 00007A0C (30 KiB): IRAM[0m
+[0;32mI (586) spi_flash: detected chip: generic[0m
+[0;32mI (589) spi_flash: flash io: dio[0m
+[0;33mW (593) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (607) app_start: Starting scheduler on CPU0[0m
+[0;32mI (612) app_start: Starting scheduler on CPU1[0m
+[0;32mI (612) main_task: Started on CPU0[0m
+[0;32mI (622) main_task: Calling app_main()[0m
+[0;32mI (622) mqtt-logs: [APP] Startup..[0m
+[0;32mI (622) mqtt-logs: [APP] Free memory: 275856 bytes[0m
+[0;32mI (632) mqtt-logs: [APP] IDF version: HEAD-HASH-NOTFOUND[0m
+[0;32mI (652) example_connect: Start example_connect.[0m
+I (662) wifi:wifi driver task: 3ffc079c, prio:23, stack:6656, core=0
+I (662) wifi:wifi firmware version: 91b9630
+I (662) wifi:wifi certification version: v7.0
+I (662) wifi:config NVS flash: enabled
+I (662) wifi:config nano formating: disabled
+I (672) wifi:Init data frame dynamic rx buffer num: 32
+I (672) wifi:Init static rx mgmt buffer num: 5
+I (682) wifi:Init management short buffer num: 32
+I (682) wifi:Init dynamic tx buffer num: 32
+I (682) wifi:Init static rx buffer size: 1600
+I (692) wifi:Init static rx buffer num: 10
+I (692) wifi:Init dynamic rx buffer num: 32
+[0;32mI (702) wifi_init: rx ba win: 6[0m
+[0;32mI (702) wifi_init: tcpip mbox: 32[0m
+[0;32mI (702) wifi_init: udp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp tx win: 5760[0m
+[0;32mI (722) wifi_init: tcp rx win: 5760[0m
+[0;32mI (722) wifi_init: tcp mss: 1440[0m
+[0;32mI (722) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (732) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (732) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (832) wifi:mode : sta (c8:f0:9e:7b:77:c4)
+I (832) wifi:enable tsf
+[0;32mI (832) example_connect: Connecting to agua...[0m
+[0;32mI (842) example_connect: Waiting for IP(s)[0m
+I (3252) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (3492) wifi:state: init -> auth (b0)
+I (3502) wifi:state: auth -> assoc (0)
+I (3502) wifi:state: assoc -> run (10)
+W (3512) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (3512) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (3542) wifi:connected with agua, aid = 20, channel 8, BW20, bssid = d8:a0:e8:c3:38:dd
+I (3542) wifi:security: WPA2-PSK, phy: bgn, rssi: -38
+I (3542) wifi:pm start, type: 1
+
+I (3562) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4652) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:caf0:9eff:fe7b:77c4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (5612) wifi:<ba-add>idx:0 (ifx:0, d8:a0:e8:c3:38:dd), tid:0, ssn:69, winSize:64
+[0;32mI (6542) esp_netif_handlers: example_netif_sta ip: 192.168.1.33, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6542) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.33[0m
+[0;32mI (6552) example_common: Connected to example_netif_sta[0m
+[0;32mI (6552) example_common: - IPv4 address: 192.168.1.33,[0m
+[0;32mI (6562) example_common: - IPv6 address: fe80:0000:0000:0000:caf0:9eff:fe7b:77c4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6572) ST7789: GPIO_CS=-1[0m
+[0;32mI (6572) ST7789: GPIO_DC=26[0m
+[0;32mI (6582) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6592) ST7789: GPIO_RESET=25[0m
+[0;32mI (6592) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6902) ST7789: GPIO_BL=-1[0m
+[0;32mI (6902) ST7789: GPIO_MOSI=14[0m
+[0;32mI (6902) ST7789: GPIO_SCLK=27[0m
+[0;32mI (7872) mqtt-logs: Other event id:7[0m
+[0;32mI (7882) rc522: Initialized (firmware v2.0)[0m
+Iniciando keyboard 
+[0;32mI (7892) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7892) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7902) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7912) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7922) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7932) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7942) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7952) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+Primer byte de Font24_Table: 0x00
+[0;32mI (7962) main_task: Returned from app_main()[0m
+[0;32mI (8282) mqtt-logs: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8282) mqtt-logs: se publicó el mensaje, msg_id=44233[0m
+[0;32mI (8282) mqtt-logs: Suscrito correctamente, msg_id=62571[0m
+[0;32mI (8482) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=44233[0m
+[0;32mI (8892) mqtt-logs: MQTT_EVENT_SUBSCRIBED, msg_id=62571[0m
+[0;32mI (9302) mqtt-logs: MQTT_EVENT_DATA[0m
+TOPIC=/cntrlaxs/respuesta
+DATA=100
+[0;32mI (9302) rc522-logs: Cofre abierto[0m
+[0;32mI (11462) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (11462) mqtt-logs: Código ingresado hasta ahora: 1[0m
+[0;32mI (11522) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (11522) mqtt-logs: Código ingresado hasta ahora: 11[0m
+[0;32mI (11582) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (11582) mqtt-logs: Código ingresado hasta ahora: 111[0m
+[0;32mI (15092) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (15092) mqtt-logs: Código ingresado hasta ahora: 1112[0m
+[0;32mI (15152) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (15152) mqtt-logs: Código ingresado hasta ahora: 11122[0m
+[0;32mI (15212) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (15212) mqtt-logs: Código ingresado hasta ahora: 111222[0m
+[0;32mI (17152) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17162) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17172) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17182) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17192) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17202) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17212) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17222) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17232) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17242) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17252) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17262) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17272) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17282) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17292) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (17302) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (20232) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20232) mqtt-logs: Mensaje enviado correctamente, msg_id=53389[0m
+[0;32mI (20232) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20242) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20242) mqtt-logs: Mensaje enviado correctamente, msg_id=59046[0m
+[0;32mI (20252) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20262) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20262) mqtt-logs: Mensaje enviado correctamente, msg_id=54101[0m
+[0;32mI (20262) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20282) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20282) mqtt-logs: Mensaje enviado correctamente, msg_id=50205[0m
+[0;32mI (20282) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20302) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20302) mqtt-logs: Mensaje enviado correctamente, msg_id=8048[0m
+[0;32mI (20302) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20312) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20312) mqtt-logs: Mensaje enviado correctamente, msg_id=29510[0m
+[0;32mI (20312) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20332) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20332) mqtt-logs: Mensaje enviado correctamente, msg_id=33240[0m
+[0;32mI (20332) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20352) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20352) mqtt-logs: Mensaje enviado correctamente, msg_id=54090[0m
+[0;32mI (20352) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20362) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20362) mqtt-logs: Mensaje enviado correctamente, msg_id=6692[0m
+[0;32mI (20372) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20382) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20382) mqtt-logs: Mensaje enviado correctamente, msg_id=34984[0m
+[0;32mI (20382) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20402) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20402) mqtt-logs: Mensaje enviado correctamente, msg_id=43287[0m
+[0;32mI (20402) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20422) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20422) mqtt-logs: Mensaje enviado correctamente, msg_id=57040[0m
+[0;32mI (20422) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20432) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20432) mqtt-logs: Mensaje enviado correctamente, msg_id=20463[0m
+[0;32mI (20432) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20452) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (20452) mqtt-logs: Mensaje enviado correctamente, msg_id=32833[0m
+[0;32mI (20452) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (20462) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=53389[0m
+[0;32mI (20872) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=59046[0m
+[0;32mI (20872) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=54101[0m
+[0;32mI (20882) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=50205[0m
+[0;32mI (20882) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=8048[0m
+[0;32mI (20882) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=29510[0m
+[0;32mI (20892) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=33240[0m
+[0;32mI (20902) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=54090[0m
+[0;32mI (20902) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=6692[0m
+[0;32mI (20912) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=34984[0m
+[0;32mI (20912) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=43287[0m
+[0;32mI (20922) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=57040[0m
+[0;32mI (20932) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=20463[0m
+[0;32mI (20932) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=32833[0m
+[0;32mI (43542) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43552) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43562) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43572) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43582) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43592) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43602) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43612) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43622) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43632) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43642) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43652) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43662) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43672) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43682) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43692) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43702) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43712) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43722) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43732) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43742) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43752) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (43762) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44192) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44202) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44212) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44222) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44232) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44242) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44252) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44262) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44272) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44282) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44292) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44302) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44312) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44322) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44332) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44452) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44462) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44472) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44482) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44492) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44502) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44512) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44522) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44532) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44542) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44552) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44562) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (44572) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45222) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45232) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45242) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45252) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45262) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45272) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45282) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45292) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45302) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45312) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45322) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45332) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45342) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45352) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45362) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (45372) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46072) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46082) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46092) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46102) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46112) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46122) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46132) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46142) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46152) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46162) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46172) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46182) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46192) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46202) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46212) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46222) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46232) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46242) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46252) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46522) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46532) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46542) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46552) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46562) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46572) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46582) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46592) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46602) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46612) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46622) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46632) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46642) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46772) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46782) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46792) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46802) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46812) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46822) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46832) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46842) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46852) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46972) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46982) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (46992) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47002) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47012) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47022) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47032) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47042) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47172) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47182) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47192) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47202) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47212) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47222) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47232) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47242) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47252) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47262) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47272) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47282) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47372) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47382) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47392) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47402) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47412) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47422) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47432) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47442) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47452) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (47462) mqtt-logs: Tecla presionada: D[0m
+[0;32mI (48562) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48572) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48582) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48592) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48602) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48612) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48622) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48632) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48642) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48652) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48662) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48672) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48682) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48692) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48702) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48712) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48722) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48732) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (48742) mqtt-logs: Tecla presionada: C[0m
+[0;32mI (49932) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (49942) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (49952) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (49962) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (49972) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (49982) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (49992) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50002) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50012) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50022) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50032) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50042) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50052) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50062) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50072) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50082) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50092) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50102) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50112) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50122) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50132) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (50142) mqtt-logs: Tecla presionada: A[0m
+[0;32mI (51572) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51582) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51592) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51602) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51612) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51622) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51632) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51642) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51652) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51662) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51672) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51682) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51692) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51702) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51712) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51722) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51732) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51742) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51752) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51762) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52272) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (52282) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (52292) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (52302) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (52312) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (52322) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (52332) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (52342) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (52352) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (52362) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (53352) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (53352) mqtt-logs: Mensaje enviado correctamente, msg_id=18896[0m
+[0;32mI (53352) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (53362) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (53362) mqtt-logs: Mensaje enviado correctamente, msg_id=6889[0m
+[0;32mI (53362) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (53382) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (53382) mqtt-logs: Mensaje enviado correctamente, msg_id=21049[0m
+[0;32mI (53382) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (53402) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (53402) mqtt-logs: Mensaje enviado correctamente, msg_id=8440[0m
+[0;32mI (53402) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (53422) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (53422) mqtt-logs: Mensaje enviado correctamente, msg_id=23049[0m
+[0;32mI (53422) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (53432) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (53432) mqtt-logs: Mensaje enviado correctamente, msg_id=10474[0m
+[0;32mI (53432) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (53452) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (53452) mqtt-logs: Mensaje enviado correctamente, msg_id=49920[0m
+[0;32mI (53452) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (53472) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (53472) mqtt-logs: Mensaje enviado correctamente, msg_id=12856[0m
+[0;32mI (53472) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (53482) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (53482) mqtt-logs: Mensaje enviado correctamente, msg_id=48686[0m
+[0;32mI (53492) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (53502) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (53502) mqtt-logs: Mensaje enviado correctamente, msg_id=33148[0m
+[0;32mI (53502) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (53522) mqtt-logs: Tecla presionada: #[0m
+[0;32mI (53522) mqtt-logs: Mensaje enviado correctamente, msg_id=49795[0m
+[0;32mI (53522) mqtt-logs: Código completo ingresado: 111222[0m
+[0;32mI (53532) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=18896[0m
+[0;32mI (53782) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=6889[0m
+[0;32mI (53782) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=21049[0m
+[0;32mI (53792) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=8440[0m
+[0;32mI (53792) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=23049[0m
+[0;32mI (53802) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=10474[0m
+[0;32mI (53802) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=49920[0m
+[0;32mI (53812) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=12856[0m
+[0;32mI (53812) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=48686[0m
+[0;32mI (53822) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=33148[0m
+[0;32mI (53832) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=49795[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:03:19[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a2f4h (172788) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=0003a31c vaddr=3ffb0000 size=03cc8h ( 15560) load[0m
+[0;32mI (174) esp_image: segment 2: paddr=0003dfec vaddr=40080000 size=0202ch (  8236) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0738h (657208) map[0m
+[0;32mI (419) esp_image: segment 4: paddr=000e0760 vaddr=4008202c size=165c8h ( 91592) load[0m
+[0;32mI (470) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (470) boot: Disabling RNG early entropy source...[0m
+[0;32mI (481) cpu_start: Multicore app[0m
+[0;32mI (482) cpu_start: Pro cpu up.[0m
+[0;32mI (482) cpu_start: Starting app cpu, entry point is 0x40081548[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (500) cpu_start: Pro cpu start user code[0m
+[0;32mI (500) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (500) cpu_start: Application information:[0m
+[0;32mI (504) cpu_start: Project name:     mqtt-tcp[0m
+[0;32mI (509) cpu_start: App version:      a4afc2c-dirty[0m
+[0;32mI (515) cpu_start: Compile time:     Jun  2 2024 11:02:39[0m
+[0;32mI (521) cpu_start: ELF file SHA256:  5a9ba17d...[0m
+[0;32mI (526) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (532) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (537) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (542) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (547) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (554) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFB8BC0 len 00027440 (157 KiB): DRAM[0m
+[0;32mI (566) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (572) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (579) heap_init: At 400985F4 len 00007A0C (30 KiB): IRAM[0m
+[0;32mI (586) spi_flash: detected chip: generic[0m
+[0;32mI (589) spi_flash: flash io: dio[0m
+[0;33mW (593) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (607) app_start: Starting scheduler on CPU0[0m
+[0;32mI (612) app_start: Starting scheduler on CPU1[0m
+[0;32mI (612) main_task: Started on CPU0[0m
+[0;32mI (622) main_task: Calling app_main()[0m
+[0;32mI (622) mqtt-logs: [APP] Startup..[0m
+[0;32mI (622) mqtt-logs: [APP] Free memory: 275856 bytes[0m
+[0;32mI (632) mqtt-logs: [APP] IDF version: HEAD-HASH-NOTFOUND[0m
+[0;32mI (652) example_connect: Start example_connect.[0m
+I (662) wifi:wifi driver task: 3ffc079c, prio:23, stack:6656, core=0
+I (662) wifi:wifi firmware version: 91b9630
+I (662) wifi:wifi certification version: v7.0
+I (662) wifi:config NVS flash: enabled
+I (662) wifi:config nano formating: disabled
+I (672) wifi:Init data frame dynamic rx buffer num: 32
+I (672) wifi:Init static rx mgmt buffer num: 5
+I (682) wifi:Init management short buffer num: 32
+I (682) wifi:Init dynamic tx buffer num: 32
+I (682) wifi:Init static rx buffer size: 1600
+I (692) wifi:Init static rx buffer num: 10
+I (692) wifi:Init dynamic rx buffer num: 32
+[0;32mI (702) wifi_init: rx ba win: 6[0m
+[0;32mI (702) wifi_init: tcpip mbox: 32[0m
+[0;32mI (702) wifi_init: udp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp tx win: 5760[0m
+[0;32mI (722) wifi_init: tcp rx win: 5760[0m
+[0;32mI (722) wifi_init: tcp mss: 1440[0m
+[0;32mI (722) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (732) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (732) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (832) wifi:mode : sta (c8:f0:9e:7b:77:c4)
+I (842) wifi:enable tsf
+[0;32mI (842) example_connect: Connecting to agua...[0m
+[0;32mI (842) example_connect: Waiting for IP(s)[0m
+I (3252) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (3502) wifi:state: init -> auth (b0)
+I (3502) wifi:state: auth -> assoc (0)
+I (3512) wifi:state: assoc -> run (10)
+W (3512) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (3512) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (3532) wifi:connected with agua, aid = 20, channel 8, BW20, bssid = d8:a0:e8:c3:38:dd
+I (3532) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (3532) wifi:pm start, type: 1
+
+I (3582) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4652) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:caf0:9eff:fe7b:77c4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (5642) wifi:<ba-add>idx:0 (ifx:0, d8:a0:e8:c3:38:dd), tid:0, ssn:94, winSize:64
+[0;32mI (6542) esp_netif_handlers: example_netif_sta ip: 192.168.1.33, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6542) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.33[0m
+[0;32mI (6552) example_common: Connected to example_netif_sta[0m
+[0;32mI (6552) example_common: - IPv4 address: 192.168.1.33,[0m
+[0;32mI (6562) example_common: - IPv6 address: fe80:0000:0000:0000:caf0:9eff:fe7b:77c4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6572) ST7789: GPIO_CS=-1[0m
+[0;32mI (6572) ST7789: GPIO_DC=26[0m
+[0;32mI (6582) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6592) ST7789: GPIO_RESET=25[0m
+[0;32mI (6592) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6902) ST7789: GPIO_BL=-1[0m
+[0;32mI (6902) ST7789: GPIO_MOSI=14[0m
+[0;32mI (6902) ST7789: GPIO_SCLK=27[0m
+[0;32mI (7872) mqtt-logs: Other event id:7[0m
+[0;32mI (7882) rc522: Initialized (firmware v2.0)[0m
+Iniciando keyboard 
+[0;32mI (7882) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7892) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7892) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7902) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7912) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7922) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7932) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7942) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+Primer byte de Font24_Table: 0x00
+[0;32mI (7952) main_task: Returned from app_main()[0m
+[0;32mI (8302) mqtt-logs: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8302) mqtt-logs: se publicó el mensaje, msg_id=53809[0m
+[0;32mI (8302) mqtt-logs: Suscrito correctamente, msg_id=14219[0m
+[0;32mI (8512) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=53809[0m
+[0;32mI (8812) mqtt-logs: MQTT_EVENT_SUBSCRIBED, msg_id=14219[0m
+[0;32mI (9122) mqtt-logs: MQTT_EVENT_DATA[0m
+TOPIC=/cntrlaxs/respuesta
+DATA=100
+[0;32mI (9122) rc522-logs: Cofre abierto[0m
+ts Ju�+ښ�j%�(40) boot.esp32: �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:03:19[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a2f4h (172788) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=0003a31c vaddr=3ffb0000 size=03cc8h ( 15560) load[0m
+[0;32mI (174) esp_image: segment 2: paddr=0003dfec vaddr=40080000 size=0202ch (  8236) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0738h (657208) map[0m
+[0;32mI (72ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:03:19[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a2f4h (172788) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=0003a31c vaddr=3ffb0000 size=03cc8h ( 15560) load[0m
+[0;32mI (174) esp_image: segment 2: paddr=0003dfec vaddr=40080000 size=0202ch (  8236) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0738h (657208) map[0m
+[0;32mI (419) esp_image: segment 4: paddr=000e0760 vaddr=4008202c size=165c8h ( 91592) load[0m
+[0;32mI (470) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (470) boot: Disabling RNG early entropy source...[0m
+[0;32mI (481) cpu_start: Multicore app[0m
+[0;32mI (482) cpu_start: Pro cpu up.[0m
+[0;32mI (482) cpu_start: Starting app cpu, entry point is 0x40081548[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (500) cpu_start: Pro cpu start user code[0m
+[0;32mI (500) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (500) cpu_start: Application information:[0m
+[0;32mI (504) cpu_start: Project name:     mqtt-tcp[0m
+[0;32mI (509) cpu_start: App version:      a4afc2c-dirty[0m
+[0;32mI (515) cpu_start: Compile time:     Jun  2 2024 11:02:39[0m
+[0;32mI (521) cpu_start: ELF file SHA256:  5a9ba17d...[0m
+[0;32mI (526) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (532) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (537) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (542) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (547) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (554) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFB8BC0 len 00027440 (157 KiB): DRAM[0m
+[0;32mI (566) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (572) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (579) heap_init: At 400985F4 len 00007A0C (30 KiB): IRAM[0m
+[0;32mI (586) spi_flash: detected chip: generic[0m
+[0;32mI (589) spi_flash: flash io: dio[0m
+[0;33mW (593) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (607) app_start: Starting scheduler on CPU0[0m
+[0;32mI (612) app_start: Starting scheduler on CPU1[0m
+[0;32mI (612) main_task: Started on CPU0[0m
+[0;32mI (622) main_task: Calling app_main()[0m
+[0;32mI (622) mqtt-logs: [APP] Startup..[0m
+[0;32mI (622) mqtt-logs: [APP] Free memory: 275856 bytes[0m
+[0;32mI (632) mqtt-logs: [APP] IDF version: HEAD-HASH-NOTFOUND[0m
+[0;32mI (652) example_connect: Start example_connect.[0m
+I (662) wifi:wifi driver task: 3ffc079c, prio:23, stack:6656, core=0
+I (662) wifi:wifi firmware version: 91b9630
+I (662) wifi:wifi certification version: v7.0
+I (662) wifi:config NVS flash: enabled
+I (662) wifi:config nano formating: disabled
+I (672) wifi:Init data frame dynamic rx buffer num: 32
+I (672) wifi:Init static rx mgmt buffer num: 5
+I (682) wifi:Init management short buffer num: 32
+I (682) wifi:Init dynamic tx buffer num: 32
+I (682) wifi:Init static rx buffer size: 1600
+I (692) wifi:Init static rx buffer num: 10
+I (692) wifi:Init dynamic rx buffer num: 32
+[0;32mI (702) wifi_init: rx ba win: 6[0m
+[0;32mI (702) wifi_init: tcpip mbox: 32[0m
+[0;32mI (702) wifi_init: udp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp tx win: 5760[0m
+[0;32mI (722) wifi_init: tcp rx win: 5760[0m
+[0;32mI (722) wifi_init: tcp mss: 1440[0m
+[0;32mI (722) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (732) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (732) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (832) wifi:mode : sta (c8:f0:9e:7b:77:c4)
+I (832) wifi:enable tsf
+[0;32mI (832) example_connect: Connecting to agua...[0m
+[0;32mI (842) example_connect: Waiting for IP(s)[0m
+I (3252) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (3492) wifi:state: init -> auth (b0)
+I (3502) wifi:state: auth -> assoc (0)
+I (3502) wifi:state: assoc -> run (10)
+W (3512) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (3512) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (3532) wifi:connected with agua, aid = 20, channel 8, BW20, bssid = d8:a0:e8:c3:38:dd
+I (3532) wifi:security: WPA2-PSK, phy: bgn, rssi: -40
+I (3532) wifi:pm start, type: 1
+
+I (3552) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4652) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:caf0:9eff:fe7b:77c4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (5602) wifi:<ba-add>idx:0 (ifx:0, d8:a0:e8:c3:38:dd), tid:0, ssn:131, winSize:64
+[0;32mI (6542) esp_netif_handlers: example_netif_sta ip: 192.168.1.33, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6542) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.33[0m
+[0;32mI (6552) example_common: Connected to example_netif_sta[0m
+[0;32mI (6552) example_common: - IPv4 address: 192.168.1.33,[0m
+[0;32mI (6562) example_common: - IPv6 address: fe80:0000:0000:0000:caf0:9eff:fe7b:77c4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6572) ST7789: GPIO_CS=-1[0m
+[0;32mI (6572) ST7789: GPIO_DC=26[0m
+[0;32mI (6582) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6592) ST7789: GPIO_RESET=25[0m
+[0;32mI (6592) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6902) ST7789: GPIO_BL=-1[0m
+[0;32mI (6902) ST7789: GPIO_MOSI=14[0m
+[0;32mI (6902) ST7789: GPIO_SCLK=27[0m
+[0;32mI (7872) mqtt-logs: Other event id:7[0m
+[0;32mI (7882) rc522: Initialized (firmware v2.0)[0m
+Iniciando keyboard 
+[0;32mI (7882) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7892) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7902) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7912) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7922) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7922) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7932) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7942) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+Primer byte de Font24_Table: 0x00
+[0;32mI (7962) main_task: Returned from app_main()[0m
+[0;32mI (8262) mqtt-logs: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8272) mqtt-logs: se publicó el mensaje, msg_id=44295[0m
+[0;32mI (8272) mqtt-logs: Suscrito correctamente, msg_id=63873[0m
+[0;32mI (8472) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=44295[0m
+[0;32mI (8882) mqtt-logs: MQTT_EVENT_SUBSCRIBED, msg_id=63873[0m
+[0;32mI (9092) mqtt-logs: MQTT_EVENT_DATA[0m
+TOPIC=/cntrlaxs/respuesta
+DATA=100
+[0;32mI (9092) rc522-logs: Cofre abierto[0m

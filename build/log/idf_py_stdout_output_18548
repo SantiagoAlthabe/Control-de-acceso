@@ -1,0 +1,1749 @@
+ts Juets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:03:19[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a214h (172564) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=0003a23c vaddr=3ffb0000 size=03cc8h ( 15560) load[0m
+[0;32mI (174) esp_image: segment 2: paddr=0003df0c vaddr=40080000 size=0210ch (  8460) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a06c8h (657096) map[0m
+[0;32mI (419) esp_image: segment 4: paddr=000e06f0 vaddr=4008210c size=164e8h ( 91368) load[0m
+[0;32mI (469) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (470) boot: Disabling RNG early entropy source...[0m
+[0;32mI (481) cpu_start: Multicore app[0m
+[0;32mI (481) cpu_start: Pro cpu up.[0m
+[0;32mI (482) cpu_start: Starting app cpu, entry point is 0x40081548[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (499) cpu_start: Pro cpu start user code[0m
+[0;32mI (499) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (499) cpu_start: Application information:[0m
+[0;32mI (504) cpu_start: Project name:     mqtt-tcp[0m
+[0;32mI (509) cpu_start: App version:      a4afc2c-dirty[0m
+[0;32mI (515) cpu_start: Compile time:     Jun  2 2024 11:02:39[0m
+[0;32mI (521) cpu_start: ELF file SHA256:  5e6e724d...[0m
+[0;32mI (526) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (532) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (537) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (541) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (546) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (554) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (559) heap_init: At 3FFB8BC0 len 00027440 (157 KiB): DRAM[0m
+[0;32mI (566) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (572) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (578) heap_init: At 400985F4 len 00007A0C (30 KiB): IRAM[0m
+[0;32mI (586) spi_flash: detected chip: generic[0m
+[0;32mI (589) spi_flash: flash io: dio[0m
+[0;33mW (593) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (607) app_start: Starting scheduler on CPU0[0m
+[0;32mI (611) app_start: Starting scheduler on CPU1[0m
+[0;32mI (611) main_task: Started on CPU0[0m
+[0;32mI (621) main_task: Calling app_main()[0m
+[0;32mI (621) mqtt-logs: [APP] Startup..[0m
+[0;32mI (621) mqtt-logs: [APP] Free memory: 275856 bytes[0m
+[0;32mI (631) mqtt-logs: [APP] IDF version: HEAD-HASH-NOTFOUND[0m
+[0;32mI (651) example_connect: Start example_connect.[0m
+I (661) wifi:wifi driver task: 3ffc079c, prio:23, stack:6656, core=0
+I (661) wifi:wifi firmware version: 91b9630
+I (661) wifi:wifi certification version: v7.0
+I (661) wifi:config NVS flash: enabled
+I (661) wifi:config nano formating: disabled
+I (671) wifi:Init data frame dynamic rx buffer num: 32
+I (671) wifi:Init static rx mgmt buffer num: 5
+I (681) wifi:Init management short buffer num: 32
+I (681) wifi:Init dynamic tx buffer num: 32
+I (681) wifi:Init static rx buffer size: 1600
+I (691) wifi:Init static rx buffer num: 10
+I (691) wifi:Init dynamic rx buffer num: 32
+[0;32mI (701) wifi_init: rx ba win: 6[0m
+[0;32mI (701) wifi_init: tcpip mbox: 32[0m
+[0;32mI (701) wifi_init: udp mbox: 6[0m
+[0;32mI (711) wifi_init: tcp mbox: 6[0m
+[0;32mI (711) wifi_init: tcp tx win: 5760[0m
+[0;32mI (721) wifi_init: tcp rx win: 5760[0m
+[0;32mI (721) wifi_init: tcp mss: 1440[0m
+[0;32mI (721) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (731) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (731) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (831) wifi:mode : sta (c8:f0:9e:7b:77:c4)
+I (831) wifi:enable tsf
+[0;32mI (841) example_connect: Connecting to agua...[0m
+[0;32mI (841) example_connect: Waiting for IP(s)[0m
+I (3251) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (3501) wifi:state: init -> auth (b0)
+I (3501) wifi:state: auth -> assoc (0)
+I (3511) wifi:state: assoc -> run (10)
+W (3511) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (3511) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (3531) wifi:connected with agua, aid = 19, channel 8, BW20, bssid = d8:a0:e8:c3:38:dd
+I (3531) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (3531) wifi:pm start, type: 1
+
+I (3591) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4651) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:caf0:9eff:fe7b:77c4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+I (5641) wifi:<ba-add>idx:0 (ifx:0, d8:a0:e8:c3:38:dd), tid:0, ssn:113, winSize:64
+[0;32mI (6541) esp_netif_handlers: example_netif_sta ip: 192.168.1.33, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6541) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.1.33[0m
+[0;32mI (6551) example_common: Connected to example_netif_sta[0m
+[0;32mI (6551) example_common: - IPv4 address: 192.168.1.33,[0m
+[0;32mI (6561) example_common: - IPv6 address: fe80:0000:0000:0000:caf0:9eff:fe7b:77c4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6571) ST7789: GPIO_CS=-1[0m
+[0;32mI (6571) ST7789: GPIO_DC=26[0m
+[0;32mI (6581) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6591) ST7789: GPIO_RESET=25[0m
+[0;32mI (6591) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6901) ST7789: GPIO_BL=-1[0m
+[0;32mI (6901) ST7789: GPIO_MOSI=14[0m
+[0;32mI (6901) ST7789: GPIO_SCLK=27[0m
+[0;32mI (7871) mqtt-logs: Other event id:7[0m
+[0;32mI (7881) rc522: Initialized (firmware v2.0)[0m
+Iniciando keyboard 
+[0;32mI (7881) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7891) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7891) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7901) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7911) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7921) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7931) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7941) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+Primer byte de Font24_Table: 0x00
+[0;32mI (7951) main_task: Returned from app_main()[0m
+[0;32mI (8311) mqtt-logs: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8311) mqtt-logs: se publicó el mensaje, msg_id=18196[0m
+[0;32mI (8321) mqtt-logs: Suscrito correctamente, msg_id=49698[0m
+[0;32mI (8511) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=18196[0m
+[0;32mI (8821) mqtt-logs: MQTT_EVENT_SUBSCRIBED, msg_id=49698[0m
+[0;32mI (9131) mqtt-logs: MQTT_EVENT_DATA[0m
+TOPIC=/cntrlaxs/respuesta
+DATA=100
+[0;32mI (9131) rc522-logs: Cofre abierto[0m
+[0;32mI (19071) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19081) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19091) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19101) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19111) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19121) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19131) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19141) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19151) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19161) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19171) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19181) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19191) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19201) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19211) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19221) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19231) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19241) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19251) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19261) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19271) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19281) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19291) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19301) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19311) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19321) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19331) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19341) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19351) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19361) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19371) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19381) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19391) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19401) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19411) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (19421) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20501) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20511) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20521) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20531) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20541) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20551) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20561) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20571) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20581) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20591) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20601) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20611) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20621) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20631) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20641) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20651) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20661) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20671) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20681) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20691) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20701) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20711) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20721) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20731) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20741) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20751) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20761) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20771) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20781) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (20791) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (22021) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22031) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22041) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22051) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22061) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22071) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22081) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22091) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22101) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22111) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22121) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22131) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22141) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22151) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22161) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22171) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22181) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22191) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22201) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22211) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22221) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22231) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22241) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22251) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22261) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22271) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22281) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22291) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22301) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22311) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22811) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22821) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22831) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22841) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22851) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22861) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22871) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22881) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22891) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22901) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22911) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22921) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22931) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22941) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22951) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22961) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22971) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22981) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (22991) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (23001) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (23011) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25391) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25401) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25411) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25421) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25431) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25441) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25451) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25461) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25471) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25481) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25491) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25501) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25511) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25521) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25531) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25541) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25551) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25561) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25571) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25581) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25591) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25601) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (25611) mqtt-logs: Tecla presionada: 2[0m
+[0;32mI (31671) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31681) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31691) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31701) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31711) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31721) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31731) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31741) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31751) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31761) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31771) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31781) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31791) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31801) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31811) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31821) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31831) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31841) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31851) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31861) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31871) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31881) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31891) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31901) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31911) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31921) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31931) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (31941) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (32631) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32641) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32651) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32661) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32671) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32681) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32691) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32701) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32711) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32721) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32731) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32741) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32751) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32761) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32771) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32781) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32791) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32801) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32811) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32821) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32831) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32841) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (32851) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (33701) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33711) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33721) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33731) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33741) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33751) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33761) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33771) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33781) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33791) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33801) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33811) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33821) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33831) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33841) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33851) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33861) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33871) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33881) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33891) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (33901) mqtt-logs: Tecla presionada: 7[0m
+[0;32mI (34531) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34541) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34551) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34561) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34571) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34581) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34591) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34601) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34611) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34621) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34631) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34641) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34651) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34661) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34671) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34681) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34691) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34701) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34711) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34721) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34731) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (34741) mqtt-logs: Tecla presionada: 8[0m
+[0;32mI (36441) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36451) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36461) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36471) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36481) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36491) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36501) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36511) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36521) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36531) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36541) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36551) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36561) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36571) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36581) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36591) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36601) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36611) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36621) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36631) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36641) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (36651) mqtt-logs: Tecla presionada: 0[0m
+[0;32mI (45151) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45161) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45171) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45181) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45191) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45201) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45211) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45221) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45231) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45241) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45251) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45261) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45271) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45281) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45291) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45301) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45311) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45321) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45331) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45341) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45351) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45361) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45371) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45381) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (45391) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (46921) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (46931) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (46941) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (46951) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (46961) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (46971) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (46981) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (46991) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47001) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47011) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47021) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47031) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47041) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47051) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47061) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47071) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47081) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47091) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47101) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47111) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47121) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (47131) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48321) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48331) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48341) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48351) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48361) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48371) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48381) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48391) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48401) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48411) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48421) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48431) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48441) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48451) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48461) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48471) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48481) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48491) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (48511) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49231) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49241) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49251) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49261) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49271) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49281) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49291) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49301) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49311) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49321) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49331) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49341) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49351) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49361) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49781) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49791) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49811) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49821) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49831) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49841) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49851) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49861) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49871) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49901) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (49911) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50151) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50161) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50171) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50181) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50191) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50201) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50211) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50221) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50231) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50241) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50251) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50261) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50271) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50281) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50291) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50481) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50491) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50501) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50511) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50521) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50531) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50541) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50551) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50561) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50571) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50581) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50591) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50601) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50611) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50621) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50631) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50641) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50651) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50661) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50671) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50971) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50981) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (50991) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51001) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51011) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51021) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51031) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51041) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51051) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51251) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51261) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51271) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51281) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51291) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51301) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51311) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51321) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51331) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51341) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51351) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51361) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51371) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51381) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51391) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51401) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51411) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51421) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (51431) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52431) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52441) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52451) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52461) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52471) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52481) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52491) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52501) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52511) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52521) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52531) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52541) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52551) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52561) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52571) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52581) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52591) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52601) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52611) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52621) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52631) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52641) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52651) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52661) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52671) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52681) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52691) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52701) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52711) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52721) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52731) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52741) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52751) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52761) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52771) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52781) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52791) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52801) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52811) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52821) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52831) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52841) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52851) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52861) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52871) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52881) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52891) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52901) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52911) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52921) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52931) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52941) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52951) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52961) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52971) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52981) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (52991) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53001) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53011) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53021) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53031) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53041) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53051) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53061) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53071) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53081) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53091) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53101) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53111) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53121) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53131) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53141) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53151) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53161) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53171) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53181) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53191) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53201) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53211) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53221) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53231) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53241) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53251) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53261) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53271) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53281) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53291) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53301) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53311) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53321) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53331) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53341) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53351) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53361) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53371) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53381) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53391) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53401) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53411) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53421) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53431) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53441) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53451) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53461) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53471) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53481) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53491) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53501) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53511) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53701) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53711) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53721) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53731) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53741) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53751) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53761) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53771) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53781) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53791) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53801) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53811) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53821) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53831) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53841) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53851) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53861) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53981) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (53991) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (54001) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (54011) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (54021) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (54031) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (54041) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (54051) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (54061) mqtt-logs: Tecla presionada: 1[0m
+[0;32mI (55351) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55361) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55371) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55381) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55391) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55401) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55411) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55421) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55431) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55441) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55451) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55461) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55471) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55481) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55491) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55501) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55511) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55521) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55531) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55541) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55551) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55561) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55571) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (55581) mqtt-logs: Tecla presionada: 4[0m
+[0;32mI (57501) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57511) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57521) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57531) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57541) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57551) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57561) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57571) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57581) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57591) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57601) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57611) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57621) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57631) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57641) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57651) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57661) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57671) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57681) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (57691) mqtt-logs: Tecla presionada: 5[0m
+[0;32mI (64501) rc522-logs: Tarjeta escaneada (sn: 142605371045)[0m
+[0;32mI (64501) mqtt-logs: Mensaje enviado correctamente, msg_id=50624[0m
+[0;32mI (64731) mqtt-logs: MQTT_EVENT_PUBLISHED, msg_id=50624[0m
+[0;32mI (65141) mqtt-logs: MQTT_EVENT_DATA[0m
+TOPIC=/cntrlaxs/respuesta
+DATA=111
+[0;32mI (65141) rc522-logs: Acceso permitido[0m
+A%�Speed      : 40MHz[0m
+[0;32m�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ts Jul 29 ����2: SPI Speed      : 40MHz[0m
+�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  2 2024 11:57:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09dc0h ( 40384) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019de8 vaddr=3ffb0000 size=022e4h (  8932) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c0d4 vaddr=40080000 size=03f44h ( 16196) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14c0ch ( 85004) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034c34 vaddr=40083f44 size=087d8h ( 34776) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (205) cpu_start: Project name:     servo-test[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (215) cpu_start: Compile time:     Jun  2 2024 11:57:35[0m
+[0;32mI (221) cpu_start: ELF file SHA256:  d380f801a...[0m
+[0;32mI (226) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2BA8 len 0002D458 (181 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+Inicializando GPIO para control de servomotor con MCPWM...
+Moviendo a 0 grados
+Moviendo a 170 grados
+Regresando a 0 grados
+Apagando el puerto MCPWM
+[0;32mI (4325) main_task: Returned from app_main()[0m

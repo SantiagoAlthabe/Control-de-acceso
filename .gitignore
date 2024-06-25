@@ -1,0 +1,4 @@
+.devcontainer/
+.metadata/
+.vscode/
+doxygen/
