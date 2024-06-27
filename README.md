@@ -35,7 +35,7 @@ Este proyecto está diseñado para gestionar el acceso a un cofre de seguridad o
 - **Modo Seguro**: Cierra automáticamente el cofre después de 15 segundos de apertura.
 - **Base de datos**: Se usa MongoDB para el almacenamiento de los usuarios del acceso (Información de configuración en repositorio de backend).
 - **Servidor Backend**: Para la gestion de las comunicaciones con el broKer Mqtt y la Base de datos.
-[Repositorio Backend](https://github.com/Isaac-94/Web-Control-de-accesos)
+[Repositorio Backend](https://github.com/SantiagoAlthabe/web-control-acceso)
 - **Frontend**: Interfaz de usuario para la gestion de permisos de accesos a tarjetas y codigos.(Información de configuración en repositorio de backend).
 
 ## Hardware Necesario
@@ -63,7 +63,7 @@ Este proyecto está diseñado para gestionar el acceso a un cofre de seguridad o
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/Isaac-94/Control-de-acceso.git
+git clone https://github.com/SantiagoAlthabe/Control-de-acceso.git
 cd Control-de-acceso
 ```
 
@@ -130,8 +130,7 @@ Tiempo de Espera del Código: Si el código no se completa en 15 segundos, se li
 
 ## Este proyecto está licenciado bajo la MIT License.
 
-Autor
-Creado por @Isaac-94
+Autor: Santiago Althabe
 
 
 
